@@ -25,14 +25,14 @@ O `meu_servidor` é um servidor HTTP que serve arquivos de um diretório local. 
 Este projeto usa um `Makefile` para facilitar a compilação. Basta executar o comando `make`:
 make
 
-# Exemplo: Servindo a pasta 'teste' local
+### Exemplo: Servindo a pasta 'teste' local
 ./meu_servidor teste
 
-# Exemplo 1: Baixando do seu próprio servidor local
+### Exemplo 1: Baixando do seu próprio servidor local
 ./meu_navegador http://localhost:8080/pagina.txt
 
-# Exemplo 2: Baixando a listagem do diretório (se não houver index.html)
+### Exemplo 2: Baixando a listagem do diretório (se não houver index.html)
 ./meu_navegador http://localhost:8080/
 
-# Exemplo 3: Baixando de um site externo (apenas HTTP)
+### Exemplo 3: Baixando de um site externo (apenas HTTP)
 ./meu_navegador [http://info.cern.ch/index.html](http://info.cern.ch/index.html)
