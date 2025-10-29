@@ -52,7 +52,7 @@ static void enviarListagemDiretorio(int socket_cliente, const char* caminho_dire
 
     struct dirent* entrada;
     while((entrada = readdir(diretorio)) != NULL){
-        if(strcmp(entrada->d_name, ".") == 0) continue; 
+        if(strcmp(entrada->d_name, ".") == 0 || strcmp(entrada->d_name, "..") == 0) continue; 
 
         char* barra = "";
         snprintf(caminho_entrada, TAMANHO_MAX_CAMINHO, "%s/%s", caminho_diretorio, entrada->d_name);
