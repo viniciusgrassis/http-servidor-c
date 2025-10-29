@@ -1,0 +1,6 @@
+# Ignorar todos os arquivos-objeto
+*.o
+
+# Ignorar os executáveis finais
+meu_navegador
+meu_servidor
